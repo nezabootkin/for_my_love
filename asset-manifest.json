@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/for_my_love/static/css/main.2d7ecd7c.css",
-    "main.js": "/for_my_love/static/js/main.1e1a93e8.js",
+    "main.js": "/for_my_love/static/js/main.5789e758.js",
     "static/js/453.d887da03.chunk.js": "/for_my_love/static/js/453.d887da03.chunk.js",
     "static/media/building2.jpg": "/for_my_love/static/media/building2.18d15ee08c945e7d57df.jpg",
     "static/media/our_date.png": "/for_my_love/static/media/our_date.839a91c0101ab1e48c05.png",
@@ -14,11 +14,11 @@
     "static/media/Flores del Sol.otf": "/for_my_love/static/media/Flores del Sol.8baea287a890b86df38c.otf",
     "index.html": "/for_my_love/index.html",
     "main.2d7ecd7c.css.map": "/for_my_love/static/css/main.2d7ecd7c.css.map",
-    "main.1e1a93e8.js.map": "/for_my_love/static/js/main.1e1a93e8.js.map",
+    "main.5789e758.js.map": "/for_my_love/static/js/main.5789e758.js.map",
     "453.d887da03.chunk.js.map": "/for_my_love/static/js/453.d887da03.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d7ecd7c.css",
-    "static/js/main.1e1a93e8.js"
+    "static/js/main.5789e758.js"
   ]
 }
