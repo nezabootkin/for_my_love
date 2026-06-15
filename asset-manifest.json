@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/for_my_love/static/css/main.dbc99cca.css",
+    "main.js": "/for_my_love/static/js/main.4797a58f.js",
+    "static/js/453.d887da03.chunk.js": "/for_my_love/static/js/453.d887da03.chunk.js",
+    "static/media/building2.jpg": "/for_my_love/static/media/building2.18d15ee08c945e7d57df.jpg",
+    "static/media/our_date.png": "/for_my_love/static/media/our_date.839a91c0101ab1e48c05.png",
+    "static/media/realistic-golden-wax-seal-stamp.png": "/for_my_love/static/media/realistic-golden-wax-seal-stamp.daa8c025b83471b7fa79.png",
+    "static/media/building.webp": "/for_my_love/static/media/building.5be5db12fffbd1acf717.webp",
+    "static/media/our_photo.jpg": "/for_my_love/static/media/our_photo.529f40ae019187247e2b.jpg",
+    "static/media/RUSJellyka - Love and Passion.ttf": "/for_my_love/static/media/RUSJellyka - Love and Passion.5d5130ad3d91f25d8d65.ttf",
+    "static/media/Flores del Sol.otf": "/for_my_love/static/media/Flores del Sol.8baea287a890b86df38c.otf",
+    "index.html": "/for_my_love/index.html",
+    "main.dbc99cca.css.map": "/for_my_love/static/css/main.dbc99cca.css.map",
+    "main.4797a58f.js.map": "/for_my_love/static/js/main.4797a58f.js.map",
+    "453.d887da03.chunk.js.map": "/for_my_love/static/js/453.d887da03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbc99cca.css",
+    "static/js/main.4797a58f.js"
+  ]
+}
