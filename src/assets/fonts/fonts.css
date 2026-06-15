@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'RUSJellyka-LoveandPassion';
+    src: url('./RUSJellyka - Love and Passion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Улучшает производительность загрузки */
+}
+@font-face {
+    font-family: 'Flores del Sol';
+    src: url('./Flores del Sol.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Улучшает производительность загрузки */
+}

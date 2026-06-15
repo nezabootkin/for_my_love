@@ -1,0 +1,81 @@
+.app_mobile {
+  text-align: center;
+  background-color: #D2E4F2;
+  padding: 16px;
+}
+.postcard_mobile {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background:
+          linear-gradient(65deg,
+          transparent calc(50% - var(--half-line)),
+          #2c3e50 calc(50% - var(--half-line)),
+          #2c3e50 calc(50% + var(--half-line)),
+          transparent calc(50% + var(--half-line))
+          ),
+          linear-gradient(115deg,
+          transparent calc(50% - var(--half-line)),
+          #2c3e50 calc(50% - var(--half-line)),
+          #2c3e50 calc(50% + var(--half-line)),
+          transparent calc(50% + var(--half-line))
+          );
+  background-size: 100% 100%;
+}
+.openWindow_date_mobile_h2 {
+  font-family: 'Flores del Sol', cursive;
+  font-size: 28px;
+  align-self: end;
+  color: #203D7D;
+}
+.postcard_text_mobile {
+  font-family: 'RUSJellyka-LoveandPassion', cursive;
+  font-size: 36px;
+}
+.openWindow_text_mobile {
+  font-family: 'Flores del Sol', cursive;
+  font-size: 42px;
+  color: #203D7D;
+}
+.postcard_text_mobile_h2 {
+  font-family: 'RUSJellyka-LoveandPassion', cursive;
+  font-size: 28px;
+}
+.openWindow_text_mobile_h2 {
+  font-family: 'Flores del Sol', cursive;
+  font-size: 28px;
+  color: #203D7D;
+}
+.openWindow_mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.places_mobile {
+  display: flex;
+  flex-direction: column;
+}
+.timer_mobile {
+  width: 30px;
+  height: 40px;
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+.motionTimer_mobile {
+  position: absolute;
+  inset: 0;
+  background: #203D7D;
+  color: #D2E4F2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  font-family: 'Flores del Sol', cursive;
+}
