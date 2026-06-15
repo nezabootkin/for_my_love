@@ -55,9 +55,9 @@ function App() {
         <div className={isMobile ? 'openWindow_mobile' : 'openWindow'}>
 
           <div className={isMobile ? 'our_block_mobile' : 'our_block'}>
-            <div className={'photo_mobile_card'}>
+            <div className={isMobile ? 'photo_mobile_card' : 'photo_card'}>
               <img
-                className={'photo'}
+                className={isMobile ? 'photo' : 'picture'}
                 src={our_photo}
                 alt={'наше фото'}
                 width={isMobile ? setWidthToPhoto() : 600}
@@ -105,7 +105,7 @@ function App() {
             </text>
             <div className={isMobile ? 'places_mobile' : 'places'}>
               <img
-                className={'photo_places'}
+                className={isMobile ? 'photo_places' : 'picture'}
                 src={marriage_registry}
                 alt={'фото загса'}
                 width={isMobile ? setWidthToPhoto() : 800}
@@ -128,7 +128,7 @@ function App() {
             </text>
             <div className={isMobile ? 'places_mobile' : 'places'}>
               <img
-                className={'photo_places'}
+                className={isMobile ? 'photo_places' : 'picture'}
                 src={michurin}
                 alt={'фото загса'}
                 width={isMobile ? setWidthToPhoto() : 800}

@@ -79,6 +79,11 @@
   /*border-radius: 20px;*/
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.3);
 }
+.picture {
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.3);
+}
 .openWindow {
   display: flex;
   flex-direction: column;
@@ -165,4 +170,9 @@
       bottom left;
   background-repeat: no-repeat;
   background-size: 150px 150px;
+}
+.photo_card{
+  display: flex;
+  flex-direction: column;
+  margin: 32px;
 }
