@@ -33,24 +33,27 @@ function App() {
     <div className={isMobile ? 'app_mobile' : 'app'}>
       {isOpen ? (
         <div className={isMobile ? 'openWindow_mobile' : 'openWindow'}>
-          <div className={'our_block'}>
-            <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'}>
-              Никита и Алина
-            </text>
-            <img
-              className={'photo'}
-              src={our_photo}
-              alt={'наше фото'}
-              width={isMobile ? 300 : 600}
-              height={isMobile ? 400 : 800}
-            />
-            <text className={isMobile ? 'openWindow_date_mobile_h2' : 'openWindow_date_h2'} style={{marginBottom: 16}}>
-              15 августа 2026
-            </text>
+
+          <div className={isMobile ? 'our_block_mobile' : 'our_block'}>
+            <div className={'photo_mobile_card'}>
+              <img
+                className={'photo'}
+                src={our_photo}
+                alt={'наше фото'}
+                width={isMobile ? 300 : 600}
+                height={isMobile ? 400 : 800}
+              />
+              <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'}>
+                Никита и Алина
+              </text>
+              <text className={isMobile ? 'openWindow_date_mobile_h2' : 'openWindow_date_h2'} style={{marginBottom: 16}}>
+                15 августа 2026
+              </text>
+            </div>
           </div>
 
-          <div className={'friends_block'} style={{marginTop: 16}}>
-            <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'} style={{marginTop: 16}}>
+          <div className={isMobile ? 'friends_block_mobile' : 'friends_block'} style={{marginTop: 16}}>
+            <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'} style={{marginTop: 24}}>
               Дорогие наши гости!
             </text>
             <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
@@ -67,7 +70,7 @@ function App() {
             />
           </div>
 
-          <div className={'places_block'} style={{marginTop: 16}}>
+          <div className={isMobile ? 'places_block_mobile' : 'places_block'} style={{marginTop: 16}}>
             <text
               className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'}
               style={{margin: 16, marginTop: 32}}
@@ -76,7 +79,7 @@ function App() {
             </text>
             <text
               className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}
-              style={{margin: 16, marginTop: 32}}
+              style={{margin: 16}}
             >
               ЗАГС - 12:30
             </text>
@@ -99,13 +102,13 @@ function App() {
             </div>
             <text
               className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}
-              style={{margin: 16, marginTop: 32}}
+              style={{margin: 16}}
             >
               Мичурин - 16:00 (17:00)
             </text>
             <div className={isMobile ? 'places_mobile' : 'places'}>
               <img
-                className={'photo'}
+                className={'photo_places'}
                 src={michurin}
                 alt={'фото загса'}
                 width={isMobile ? 300 : 800}

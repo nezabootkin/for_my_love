@@ -67,17 +67,17 @@
   flex-direction: column;
 }
 .stamp {
-  margin: 0 auto;
+  margin: 0 auto 16px;
 }
 .photo {
   margin: 0 auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.15);
+  /*border-radius: 20px;*/
+  box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.3);
 }
 .photo_places {
   margin: 0 auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.15);
+  /*border-radius: 20px;*/
+  box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.3);
 }
 .openWindow {
   display: flex;
@@ -124,6 +124,15 @@
   border: 1px solid #203D7D;
   border-radius: 20px;
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.15);
+
+  background-image:
+    url('/src/assets/images/right-up.png'),
+    url('/src/assets/images/left-bottom.png');
+  background-position:
+    top right,
+    bottom left;
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
 }
 .friends_block {
   display: flex;
@@ -131,6 +140,15 @@
   border: 1px solid #203D7D;
   border-radius: 20px;
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.15);
+
+  background-image:
+    url('/src/assets/images/right-up.png'),
+    url('/src/assets/images/left-bottom.png');
+  background-position:
+    top right,
+    bottom left;
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
 }
 .places_block {
   display: flex;
@@ -138,4 +156,13 @@
   border: 1px solid #203D7D;
   border-radius: 20px;
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.15);
+
+  background-image:
+      url('/src/assets/images/right-up.png'),
+      url('/src/assets/images/left-bottom.png');
+  background-position:
+      top right,
+      bottom left;
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
 }
