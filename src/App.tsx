@@ -62,8 +62,8 @@ function App() {
               src={our_date}
               alt="Дата"
               onClick={() => setIsOpen(true)}
-              height={isMobile ? 400 : 600}
-              width={isMobile ? 400 : 600}
+              height={isMobile ? 250 : 600}
+              width={isMobile ? 250 : 600}
             />
           </div>
 
@@ -85,8 +85,8 @@ function App() {
                 className={'photo_places'}
                 src={marriage_registry}
                 alt={'фото загса'}
-                width={isMobile ? 400 : 800}
-                height={isMobile ? 300 : 600}
+                width={isMobile ? 300 : 800}
+                height={isMobile ? 200 : 600}
               />
               <div className={'places_text'}>
                 <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
@@ -108,8 +108,8 @@ function App() {
                 className={'photo'}
                 src={michurin}
                 alt={'фото загса'}
-                width={isMobile ? 400 : 800}
-                height={isMobile ? 300 : 600}
+                width={isMobile ? 300 : 800}
+                height={isMobile ? 200 : 600}
               />
               <div className={'places_text'}>
                 <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
