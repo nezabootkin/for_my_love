@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './App.css';
 import './AppMobile.css';
 import './assets/fonts/fonts.css';
@@ -23,6 +23,26 @@ function App() {
       new Date("2026-08-15T12:30:00")
     );
 
+  const blockRef = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState<number>(0);
+
+  useEffect(() => {
+    if (blockRef.current) {
+      const rect = blockRef.current.getBoundingClientRect();
+      setWidth(rect.width);
+    }
+  }, []);
+
+  const setWidthToPhoto = () => {
+    return width - 130;
+  }
+  const setHeightToPhotoV = () => {
+    return width - 40;
+  }
+  const setHeightToPhotoH = () => {
+    return width - 140;
+  }
+
   const d = format(days);
   const h = format(hours);
   const m = format(minutes);
@@ -30,7 +50,7 @@ function App() {
 
 
   return (
-    <div className={isMobile ? 'app_mobile' : 'app'}>
+    <div ref={blockRef} className={isMobile ? 'app_mobile' : 'app'}>
       {isOpen ? (
         <div className={isMobile ? 'openWindow_mobile' : 'openWindow'}>
 
@@ -40,8 +60,8 @@ function App() {
                 className={'photo'}
                 src={our_photo}
                 alt={'наше фото'}
-                width={isMobile ? 300 : 600}
-                height={isMobile ? 400 : 800}
+                width={isMobile ? setWidthToPhoto() : 600}
+                height={isMobile ? setHeightToPhotoV() : 800}
               />
               <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'}>
                 Никита и Алина
@@ -88,12 +108,12 @@ function App() {
                 className={'photo_places'}
                 src={marriage_registry}
                 alt={'фото загса'}
-                width={isMobile ? 300 : 800}
-                height={isMobile ? 200 : 600}
+                width={isMobile ? setWidthToPhoto() : 800}
+                height={isMobile ? setHeightToPhotoH() : 600}
               />
               <div className={'places_text'}>
                 <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
-                  адресс: набережная Брюгге, 5
+                  адрес: набережная Брюгге, 5
                 </text>
                 <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
                   Здесь будет проходить наш самый теплый момент этого дня
@@ -111,12 +131,12 @@ function App() {
                 className={'photo_places'}
                 src={michurin}
                 alt={'фото загса'}
-                width={isMobile ? 300 : 800}
-                height={isMobile ? 200 : 600}
+                width={isMobile ? setWidthToPhoto() : 800}
+                height={isMobile ? setHeightToPhotoH() : 600}
               />
               <div className={'places_text'}>
                 <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
-                  адресс: улица Героев Сталинградской Битвы, 95А
+                  адрес: улица Героев Сталинградской Битвы, 95А
                 </text>
                 <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
                   Здесь мы все сможем отдохнуть на славу и отпраздновать рождение новой семьи
