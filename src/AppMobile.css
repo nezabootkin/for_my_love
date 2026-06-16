@@ -71,8 +71,10 @@
 .motionTimer_mobile {
   position: absolute;
   inset: 0;
-  background: #203D7D;
-  color: #D2E4F2;
+  /*background: #203D7D;*/
+  color: #203D7D;
+  /*color: #D2E4F2;*/
+  background: #D2E4F2;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -128,6 +130,22 @@
   background-position:
     top right,
     bottom left;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+}
+.dresscode_mobile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #203D7D;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.15);
+
+  background-image:
+          url('/src/assets/images/right-up.png'),
+          url('/src/assets/images/left-bottom.png');
+  background-position:
+          top right,
+          bottom left;
   background-repeat: no-repeat;
   background-size: 75px 75px;
 }

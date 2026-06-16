@@ -7,6 +7,8 @@ import our_date from './assets/images/our_date.png';
 import our_photo from './assets/images/our_photo.jpg';
 import marriage_registry from './assets/images/building.webp';
 import michurin from './assets/images/building2.jpg'
+import dresscode_image from './assets/images/dresscode_image.png'
+import heart_timer from './assets/images/heart_timer.png'
 import { isMobile } from 'react-device-detect';
 import { FlipDigit } from "./FlipDigit";
 import { useCountdown } from "./useCountdown";
@@ -76,8 +78,14 @@ function App() {
             <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'} style={{marginTop: 24}}>
               Дорогие наши гости!
             </text>
+            {/*<text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>*/}
+            {/*  Сердце подсказывает нам, что без вас этот день будет неполным. Ведь настоящая семья начинается не только с поцелуя у алтаря, но и с тепла тех, кто верил в нас, поддерживал и радовался нашим маленьким победам. Поэтому мы приглашаем вас стать не просто гостями, а частью нашей истории — свидетелями рождения нашего маленького семейного счастья. Мы не будем заставлять вас кричать «Горько!» до хрипоты — только если вы сами этого захотите. Главная цель вечера — чтобы каждый чувствовал себя не «гостем на свадьбе», а дорогим человеком за большим семейным столом. Возьмите с собой хорошее настроение, удобную обувь для танцев (каблуки можно сменить на сменку — будем рады, если вы будете в комфорте) и немного терпения, если вдруг мы надолго задержимся у фотозоны.*/}
+            {/*</text>*/}
             <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
-              Сердце подсказывает нам, что без вас этот день будет неполным. Ведь настоящая семья начинается не только с поцелуя у алтаря, но и с тепла тех, кто верил в нас, поддерживал и радовался нашим маленьким победам. Поэтому мы приглашаем вас стать не просто гостями, а частью нашей истории — свидетелями рождения нашего маленького семейного счастья. Мы не будем заставлять вас кричать «Горько!» до хрипоты — только если вы сами этого захотите. Главная цель вечера — чтобы каждый чувствовал себя не «гостем на свадьбе», а дорогим человеком за большим семейным столом. Возьмите с собой хорошее настроение, удобную обувь для танцев (каблуки можно сменить на сменку — будем рады, если вы будете в комфорте) и немного терпения, если вдруг мы надолго задержимся у фотозоны.
+              Приглашаем Вас присоединиться к нашему первому семейному празднику - нашей свадьбе!
+            </text>
+            <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
+              Будем очень рады, если вы украсите его своим присутствием!
             </text>
             <img
               className={'stamp'}
@@ -145,8 +153,42 @@ function App() {
             </div>
           </div>
 
+          <div className={isMobile ? 'dresscode_mobile' : 'dresscode'} style={{marginTop: 16}}>
+            <text
+              className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'}
+              style={{margin: 16, marginTop: 32}}
+            >
+              Дресскод
+            </text>
+            <img
+              className={'dresscode_image'}
+              src={dresscode_image}
+              alt={'dresscode_image'}
+              height={isMobile ? 250 : 600}
+              width={isMobile ? 250 : 600}
+            />
+            <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{marginTop: 16 }}>
+              Мы были бы очень благодарны, если бы вы поддержали наш дресс код:
+            </text>
+            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: 32}}>
+              Ваш лучший наряд
+            </li>
+            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: 32}}>
+              Ваша улыбка
+            </li>
+            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: 32}}>
+              Ваш Комфорт
+            </li>
+            <text
+              className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}
+              style={{margin: 16, marginBottom: 32}}
+            >
+              Главное - Ваше присутствие!
+            </text>
+          </div>
+
           <text
-            className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}
+            className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'}
             style={{margin: 16, marginTop: 32}}
           >
             Будем рады вас видеть через...
