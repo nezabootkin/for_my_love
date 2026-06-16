@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/for_my_love/static/css/main.f8304c20.css",
-    "main.js": "/for_my_love/static/js/main.82bf94e5.js",
+    "main.css": "/for_my_love/static/css/main.6d1a8926.css",
+    "main.js": "/for_my_love/static/js/main.603f8268.js",
     "static/js/453.d887da03.chunk.js": "/for_my_love/static/js/453.d887da03.chunk.js",
     "static/media/building2.jpg": "/for_my_love/static/media/building2.18d15ee08c945e7d57df.jpg",
     "static/media/dresscode_image.png": "/for_my_love/static/media/dresscode_image.8de487b25f3232c0aa9f.png",
     "static/media/our_date.png": "/for_my_love/static/media/our_date.839a91c0101ab1e48c05.png",
     "static/media/realistic-golden-wax-seal-stamp.png": "/for_my_love/static/media/realistic-golden-wax-seal-stamp.daa8c025b83471b7fa79.png",
+    "static/media/under_text_1.png": "/for_my_love/static/media/under_text_1.b9ea90cbf5de272e74e7.png",
     "static/media/right-up.png": "/for_my_love/static/media/right-up.78901c114781cd2efc84.png",
     "static/media/left-bottom.png": "/for_my_love/static/media/left-bottom.46e700e2c2b659bd86ff.png",
+    "static/media/Isadora Cyr.ttf": "/for_my_love/static/media/Isadora Cyr.56741592a05135a2a5ee.ttf",
     "static/media/building.webp": "/for_my_love/static/media/building.5be5db12fffbd1acf717.webp",
     "static/media/our_photo.jpg": "/for_my_love/static/media/our_photo.529f40ae019187247e2b.jpg",
     "static/media/RUSJellyka - Love and Passion.ttf": "/for_my_love/static/media/RUSJellyka - Love and Passion.5d5130ad3d91f25d8d65.ttf",
     "static/media/Flores del Sol.otf": "/for_my_love/static/media/Flores del Sol.8baea287a890b86df38c.otf",
     "index.html": "/for_my_love/index.html",
-    "main.f8304c20.css.map": "/for_my_love/static/css/main.f8304c20.css.map",
-    "main.82bf94e5.js.map": "/for_my_love/static/js/main.82bf94e5.js.map",
+    "main.6d1a8926.css.map": "/for_my_love/static/css/main.6d1a8926.css.map",
+    "main.603f8268.js.map": "/for_my_love/static/js/main.603f8268.js.map",
     "453.d887da03.chunk.js.map": "/for_my_love/static/js/453.d887da03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8304c20.css",
-    "static/js/main.82bf94e5.js"
+    "static/css/main.6d1a8926.css",
+    "static/js/main.603f8268.js"
   ]
 }
