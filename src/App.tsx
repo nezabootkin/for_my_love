@@ -170,13 +170,13 @@ function App() {
             <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{marginTop: 16 }}>
               Мы были бы очень благодарны, если бы вы поддержали наш дресс код:
             </text>
-            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: 32}}>
+            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: isMobile ? 32 : 48}}>
               Ваш лучший наряд
             </li>
-            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: 32}}>
+            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: isMobile ? 32 : 48}}>
               Ваша улыбка
             </li>
-            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: 32}}>
+            <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: isMobile ? 32 : 48}}>
               Ваш Комфорт
             </li>
             <text
