@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/for_my_love/static/css/main.bec29442.css",
+    "main.css": "/for_my_love/static/css/main.8bc5602d.css",
     "main.js": "/for_my_love/static/js/main.603f8268.js",
     "static/js/453.d887da03.chunk.js": "/for_my_love/static/js/453.d887da03.chunk.js",
     "static/media/building2.jpg": "/for_my_love/static/media/building2.18d15ee08c945e7d57df.jpg",
@@ -16,12 +16,12 @@
     "static/media/RUSJellyka - Love and Passion.ttf": "/for_my_love/static/media/RUSJellyka - Love and Passion.5d5130ad3d91f25d8d65.ttf",
     "static/media/Flores del Sol.otf": "/for_my_love/static/media/Flores del Sol.8baea287a890b86df38c.otf",
     "index.html": "/for_my_love/index.html",
-    "main.bec29442.css.map": "/for_my_love/static/css/main.bec29442.css.map",
+    "main.8bc5602d.css.map": "/for_my_love/static/css/main.8bc5602d.css.map",
     "main.603f8268.js.map": "/for_my_love/static/js/main.603f8268.js.map",
     "453.d887da03.chunk.js.map": "/for_my_love/static/js/453.d887da03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bec29442.css",
+    "static/css/main.8bc5602d.css",
     "static/js/main.603f8268.js"
   ]
 }
