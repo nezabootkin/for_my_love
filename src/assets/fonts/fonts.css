@@ -12,3 +12,10 @@
     font-style: normal;
     font-display: swap; /* Улучшает производительность загрузки */
 }
+@font-face {
+    font-family: 'Isadora Cyr';
+    src: url('./Isadora Cyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Улучшает производительность загрузки */
+}
