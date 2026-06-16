@@ -104,12 +104,8 @@
   border-radius: 20px;
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.5);
 
-  background-image:
-    url('/src/assets/images/right-up.png'),
-    url('/src/assets/images/left-bottom.png');
-  background-position:
-    top right,
-    bottom left;
+  background-image: url('/src/assets/images/right-up.png');
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: 75px 75px;
 }
@@ -121,12 +117,8 @@
   border-radius: 20px;
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.5);
 
-  background-image:
-    url('/src/assets/images/right-up.png'),
-    url('/src/assets/images/left-bottom.png');
-  background-position:
-    top right,
-    bottom left;
+  background-image: url('/src/assets/images/right-up.png');
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: 75px 75px;
 }
@@ -138,12 +130,8 @@
   border-radius: 20px;
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.5);
 
-  background-image:
-    url('/src/assets/images/right-up.png'),
-    url('/src/assets/images/left-bottom.png');
-  background-position:
-    top right,
-    bottom left;
+  background-image: url('/src/assets/images/right-up.png');
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: 75px 75px;
 }
@@ -155,12 +143,8 @@
   border-radius: 20px;
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.5);
 
-  background-image:
-          url('/src/assets/images/right-up.png'),
-          url('/src/assets/images/left-bottom.png');
-  background-position:
-          top right,
-          bottom left;
+  background-image: url('/src/assets/images/right-up.png');
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: 75px 75px;
 }
