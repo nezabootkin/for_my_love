@@ -157,7 +157,7 @@ function App() {
               className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'}
               style={{margin: 16, marginTop: 32}}
             >
-              Дресскод
+              Дресс-код
             </text>
             <img
               className={'dresscode_image'}
@@ -167,7 +167,7 @@ function App() {
               width={isMobile ? 250 : 600}
             />
             <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{marginTop: 16 }}>
-              Мы были бы очень благодарны, если бы вы поддержали наш дресс код:
+              Мы были бы очень благодарны, если бы вы поддержали наш дресс-код:
             </text>
             <li className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'} style={{alignSelf: 'flex-start', marginLeft: isMobile ? 32 : 48}}>
               Ваш лучший наряд
