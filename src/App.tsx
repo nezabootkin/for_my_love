@@ -6,9 +6,8 @@ import stamp from './assets/images/realistic-golden-wax-seal-stamp.png';
 import our_date from './assets/images/our_date.png';
 import our_photo from './assets/images/our_photo.jpg';
 import marriage_registry from './assets/images/building.webp';
-import michurin from './assets/images/building2.jpg'
-import dresscode_image from './assets/images/dresscode_image.png'
-import heart_timer from './assets/images/heart_timer.png'
+import michurin from './assets/images/building2.jpg';
+import dresscode_image from './assets/images/dresscode_image.png';
 import { isMobile } from 'react-device-detect';
 import { FlipDigit } from "./FlipDigit";
 import { useCountdown } from "./useCountdown";
@@ -75,7 +74,7 @@ function App() {
           </div>
 
           <div className={isMobile ? 'friends_block_mobile' : 'friends_block'} style={{marginTop: 16}}>
-            <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'} style={{marginTop: 24}}>
+            <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'} style={{marginTop: 36}}>
               Дорогие наши гости!
             </text>
             {/*<text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>*/}
@@ -181,7 +180,7 @@ function App() {
             </li>
             <text
               className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}
-              style={{margin: 16, marginBottom: 32}}
+              style={{margin: 16, marginBottom: 48}}
             >
               Главное - Ваше присутствие!
             </text>
