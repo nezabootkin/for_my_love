@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/for_my_love/static/css/main.8bc5602d.css",
-    "main.js": "/for_my_love/static/js/main.603f8268.js",
+    "main.css": "/for_my_love/static/css/main.2ceb6a27.css",
+    "main.js": "/for_my_love/static/js/main.f6b65f1d.js",
     "static/js/453.d887da03.chunk.js": "/for_my_love/static/js/453.d887da03.chunk.js",
     "static/media/building2.jpg": "/for_my_love/static/media/building2.18d15ee08c945e7d57df.jpg",
+    "static/media/pupupu.png": "/for_my_love/static/media/pupupu.b80dffd6e5621d8f57c1.png",
+    "static/media/stamp.png": "/for_my_love/static/media/stamp.b495a6ab2a2b48138f40.png",
     "static/media/dresscode_image.png": "/for_my_love/static/media/dresscode_image.8de487b25f3232c0aa9f.png",
     "static/media/our_date.png": "/for_my_love/static/media/our_date.839a91c0101ab1e48c05.png",
-    "static/media/realistic-golden-wax-seal-stamp.png": "/for_my_love/static/media/realistic-golden-wax-seal-stamp.daa8c025b83471b7fa79.png",
     "static/media/under_text_1.png": "/for_my_love/static/media/under_text_1.b9ea90cbf5de272e74e7.png",
     "static/media/right-up.png": "/for_my_love/static/media/right-up.78901c114781cd2efc84.png",
     "static/media/left-bottom.png": "/for_my_love/static/media/left-bottom.46e700e2c2b659bd86ff.png",
@@ -16,12 +17,12 @@
     "static/media/RUSJellyka - Love and Passion.ttf": "/for_my_love/static/media/RUSJellyka - Love and Passion.5d5130ad3d91f25d8d65.ttf",
     "static/media/Flores del Sol.otf": "/for_my_love/static/media/Flores del Sol.8baea287a890b86df38c.otf",
     "index.html": "/for_my_love/index.html",
-    "main.8bc5602d.css.map": "/for_my_love/static/css/main.8bc5602d.css.map",
-    "main.603f8268.js.map": "/for_my_love/static/js/main.603f8268.js.map",
+    "main.2ceb6a27.css.map": "/for_my_love/static/css/main.2ceb6a27.css.map",
+    "main.f6b65f1d.js.map": "/for_my_love/static/js/main.f6b65f1d.js.map",
     "453.d887da03.chunk.js.map": "/for_my_love/static/js/453.d887da03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bc5602d.css",
-    "static/js/main.603f8268.js"
+    "static/css/main.2ceb6a27.css",
+    "static/js/main.f6b65f1d.js"
   ]
 }
