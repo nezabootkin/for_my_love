@@ -2,7 +2,8 @@ import React, {useEffect, useRef, useState} from 'react';
 import './App.css';
 import './AppMobile.css';
 import './assets/fonts/fonts.css';
-import stamp from './assets/images/realistic-golden-wax-seal-stamp.png';
+import stamp from './assets/images/stamp.png';
+import cover from './assets/images/pupupu.png';
 import our_date from './assets/images/our_date.png';
 import our_photo from './assets/images/our_photo.jpg';
 import marriage_registry from './assets/images/building.webp';
@@ -13,12 +14,14 @@ import { isMobile } from 'react-device-detect';
 import { FlipDigit } from "./FlipDigit";
 import { useCountdown } from "./useCountdown";
 
+type State = "closed" | "opening" | "opened";
+
 function format(value: number) {
   return String(value).padStart(2, "0");
 }
 
 function App() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [stage, setStage] = useState<State>("closed");
 
   const { days, hours, minutes, seconds } =
     useCountdown(
@@ -53,7 +56,30 @@ function App() {
 
   return (
     <div ref={blockRef} className={isMobile ? 'app_mobile' : 'app'}>
-      {isOpen ? (
+      {/* 1. CLOSED STATE */}
+      {stage === "closed" && (
+        <div style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
+          <img
+            className={'stamp'}
+            src={cover}
+            onClick={() => {
+              setStage("opening");
+              setTimeout(() => setStage("opened"), 3000);
+            }}
+            alt="stamp"
+          />
+        </div>
+      )}
+
+      {/* 2. OPENING ANIMATION LAYER */}
+      {stage === "opening" && (
+        <div className="openingScene">
+          <img src={stamp} className="stampFlying" alt={'123'} />
+        </div>
+      )}
+
+      {/* 3. FULL CONTENT */}
+      {stage === "opened" && (
         <div className={isMobile ? 'openWindow_mobile' : 'openWindow'}>
 
           <div className={isMobile ? 'our_block_mobile' : 'our_block'}>
@@ -78,9 +104,6 @@ function App() {
             <text className={isMobile ? 'openWindow_text_mobile' : 'openWindow_text'} style={{marginTop: 36}}>
               Дорогие наши гости!
             </text>
-            {/*<text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>*/}
-            {/*  Сердце подсказывает нам, что без вас этот день будет неполным. Ведь настоящая семья начинается не только с поцелуя у алтаря, но и с тепла тех, кто верил в нас, поддерживал и радовался нашим маленьким победам. Поэтому мы приглашаем вас стать не просто гостями, а частью нашей истории — свидетелями рождения нашего маленького семейного счастья. Мы не будем заставлять вас кричать «Горько!» до хрипоты — только если вы сами этого захотите. Главная цель вечера — чтобы каждый чувствовал себя не «гостем на свадьбе», а дорогим человеком за большим семейным столом. Возьмите с собой хорошее настроение, удобную обувь для танцев (каблуки можно сменить на сменку — будем рады, если вы будете в комфорте) и немного терпения, если вдруг мы надолго задержимся у фотозоны.*/}
-            {/*</text>*/}
             <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
               Приглашаем вас присоединиться к нашему первому семейному празднику - нашей свадьбе!
             </text>
@@ -88,11 +111,10 @@ function App() {
               Будем очень рады, если вы украсите его своим присутствием!
             </text>
             <img
-              className={'stamp'}
+              className={'calendar'}
               style={{marginTop: 16}}
               src={our_date}
               alt="Дата"
-              onClick={() => setIsOpen(true)}
               height={isMobile ? 250 : 600}
               width={isMobile ? 250 : 600}
             />
@@ -130,7 +152,7 @@ function App() {
                   адрес: набережная Брюгге, 5
                 </text>
                 <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
-                  Здесь будет проходить наш самый теплый момент этого дня
+                  Самое важное «да»
                 </text>
               </div>
             </div>
@@ -159,7 +181,7 @@ function App() {
                   адрес: улица Героев Сталинградской Битвы, 95А
                 </text>
                 <text className={isMobile ? 'openWindow_text_mobile_h2' : 'openWindow_text_h2'}>
-                  Здесь мы все сможем отдохнуть на славу и отпраздновать рождение новой семьи
+                  Отпразднуем день рождения нашей семьи
                 </text>
               </div>
             </div>
@@ -280,33 +302,6 @@ function App() {
                 </text>
               </>
             )}
-          </div>
-        </div>
-      ) : (
-        <div className={isMobile ? 'postcard_mobile' : 'postcard'}>
-          <div className={'postcardHeader'}>
-            <text className={isMobile ? 'postcard_text_mobile' : 'postcard_text'}>
-              Вы приглашены
-            </text>
-            <text className={isMobile ? 'postcard_text_mobile' : 'postcard_text'}>
-              на свадьбу
-            </text>
-          </div>
-          <img
-            className={'stamp'}
-            src={stamp}
-            alt="stamp"
-            onClick={() => setIsOpen(true)}
-            height={isMobile ? 250 : 400}
-            width={isMobile ? 250 : 400}
-          />
-          <div className={'postcardBottom'}>
-            <text className={isMobile ? 'postcard_text_mobile' : 'postcard_text'}>
-              Нажмите на штамп,
-            </text>
-            <text className={isMobile ? 'postcard_text_mobile' : 'postcard_text'}>
-              чтобы открыть приглашение
-            </text>
           </div>
         </div>
       )}

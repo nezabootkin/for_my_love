@@ -66,8 +66,14 @@
   display: flex;
   flex-direction: column;
 }
-.stamp {
+.calendar {
   margin: 0 auto 16px;
+}
+.stamp{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .photo {
   margin: 0 auto;
@@ -199,4 +205,48 @@
 .dresscode_image {
   margin: 0 auto;
   box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.3);
+}
+.envelopeScene.opening {
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+.openingScene {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D2E4F2;
+  overflow: hidden;
+}
+.stampFlying {
+  animation: stampFly 3s ease forwards;
+}
+
+@keyframes stampFly {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
+.openingScene {
+  animation: sceneExpand 3s ease forwards;
+}
+
+@keyframes sceneExpand {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
 }
