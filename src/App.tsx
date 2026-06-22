@@ -166,7 +166,7 @@ function App() {
                 backgroundPosition: 'center'
               }}
             >
-              Michurin Club - 17:00
+              Michurin Club - 16:00
             </text>
             <div className={isMobile ? 'places_mobile' : 'places'}>
               <img
